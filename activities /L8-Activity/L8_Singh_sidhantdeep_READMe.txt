@@ -31,7 +31,7 @@ Instructions to Run
 -----------------------------------
 
 1. Access the page via browser:
-   https://web.cs.dal.ca/~yourcsusername/csci3172/activities/lecture8/
+   https://web.cs.dal.ca/~sidhantdee/csci3172/activities/lecture8/
 
 2. Enter two numbers and click any of the four buttons:
     Add  | Subtract | Multiply | Divide
