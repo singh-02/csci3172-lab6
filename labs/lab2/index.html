@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventory Management System (IMS) — Beach Bluenoser</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Inventory Management System (IMS)</h1>
+    <p class="subtitle">CSCI 3172 — Lab 2 • Vanilla JavaScript (ES6)</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Add / Update Item</h2>
+      <form id="item-form">
+        <div class="grid">
+          <label>Name <input required id="name" placeholder="e.g., Moonlight Wand" /></label>
+          <label>Type <input required id="type" placeholder="e.g., wand, potion, guitar" /></label>
+          <label>Price ($) <input required id="price" type="number" step="0.01" min="0" placeholder="99.99" /></label>
+          <label>Quantity <input required id="quantity" type="number" min="0" step="1" placeholder="1" /></label>
+        </div>
+        <label>Description
+          <textarea id="description" rows="2" placeholder="Short, helpful description"></textarea>
+        </label>
+        <div class="row actions">
+          <button type="submit">Add / Update Item</button>
+          <button type="button" id="btn-clear-form" class="secondary">Clear Form</button>
+        </div>
+      </form>
+      <p class="hint">Tip: Adding an item with an existing <em>Name</em> will update its details.</p>
+    </section>
+
+    <section class="card">
+      <h2>Search & Utilities</h2>
+      <div class="grid">
+        <label>Search <input id="search" placeholder="Search by name or type" /></label>
+        <label>Discount % <input id="discount" type="number" step="1" min="0" max="90" placeholder="10" /></label>
+      </div>
+      <div class="row actions">
+        <button id="btn-search">Search</button>
+        <button id="btn-list-all" class="secondary">List All</button>
+        <button id="btn-discount" class="accent">Apply Discount</button>
+        <button id="btn-group">Group by Category</button>
+        <button id="btn-find-duplicates" class="warning">Find Duplicates</button>
+        <button id="btn-reset" class="danger">Reset to Sample Data</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="row-between">
+        <h2>Inventory</h2>
+        <span id="inventory-count" class="badge">0 items</span>
+      </div>
+      <div id="inventory-list" class="inventory-list" aria-live="polite"></div>
+      <div class="row-between total">
+        <strong>Total Inventory Value:</strong>
+        <span id="total-value">$0.00</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Grouped by Category</h2>
+      <div id="grouped-output" class="grouped"></div>
+    </section>
+
+    <section class="card">
+      <h2>Duplicate Items (by name)</h2>
+      <div id="duplicates-output" class="duplicates"></div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>Made with vanilla JavaScript (ES6). No external JS libraries used.</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
