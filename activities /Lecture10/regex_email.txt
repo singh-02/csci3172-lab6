@@ -1,0 +1,5 @@
+# Email – Regular Expression
+# Primary (JavaScript, Unicode):
+# Regex: ^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}$
+# Flags: —
+# Notes: Traditional format; enforces 2–6 character TLD; pragmatic coverage.

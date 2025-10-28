@@ -1,0 +1,6 @@
+# Last Name – Regular Expression
+# Primary (JavaScript, Unicode):
+# Regex: ^\p{L}+(?:[-']\p{L}+)*$
+# Flags: iu
+# Notes: Letters with internal apostrophes/hyphens; no leading/trailing punctuation; Unicode-friendly.
+# Fallback (ASCII): ^[A-Za-z]+(?:[-'][A-Za-z]+)*$  flags: i
