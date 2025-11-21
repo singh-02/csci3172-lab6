@@ -6,7 +6,7 @@ import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
 import { Routes, Route } from 'react-router-dom';
 
-function App() {
+ function App() {
   return (
     <div className="d-flex flex-column min-vh-100">
       <Header />
