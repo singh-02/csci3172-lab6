@@ -1,6 +1,0 @@
-# First Name – Regular Expression
-# Primary (JavaScript, Unicode):
-# Regex: ^\p{L}+(?:\s\p{L}+)?$
-# Flags: iu
-# Notes: Letters only; optional single space + middle name; case-insensitive; Unicode-friendly with 'u' flag.
-# Fallback (ASCII): ^[A-Za-z]+(?:\s[A-Za-z]+)?$  flags: i
