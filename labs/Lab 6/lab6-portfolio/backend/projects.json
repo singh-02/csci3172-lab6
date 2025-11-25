@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Beach Bluenoser",
+    "author": "Sidhantdeep Singh",
+    "languages": ["Flutter", "Dart", "Firebase"],
+    "description": "A beach safety app that shows alerts, weather, and local services for Nova Scotia beaches."
+  },
+  {
+    "id": 2,
+    "name": "Weather Dashboard",
+    "author": "Sidhantdeep Singh",
+    "languages": ["JavaScript", "React", "Bootstrap"],
+    "description": "A responsive web dashboard for searching and viewing current weather in multiple cities."
+  },
+  {
+    "id": 3,
+    "name": "Task Manager API",
+    "author": "Sidhantdeep Singh",
+    "languages": ["Node.js", "Express"],
+    "description": "Backend API for managing personal tasks, including authentication and CRUD operations."
+  }
+]

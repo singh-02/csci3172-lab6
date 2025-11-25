@@ -1,0 +1,49 @@
+:root {
+  --bg-light: #f8f9fa;
+  --bg-dark: #121212;
+  --text-light: #212529;
+  --text-dark: #f8f9fa;
+  --card-bg-dark: #1f1f1f;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Light mode (default) */
+.app.light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+/* Dark mode */
+.app.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.app.dark .card {
+  background-color: var(--card-bg-dark);
+  color: var(--text-dark);
+}
+
+.app.dark .navbar,
+.app.dark footer {
+  background-color: #000 !important;
+}
+
+a {
+  text-decoration: none;
+}
